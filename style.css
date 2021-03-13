@@ -1,0 +1,18 @@
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+#reset-game {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+body {
+    text-align: center;
+}
