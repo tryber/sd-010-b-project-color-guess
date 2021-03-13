@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.cores {
+  width: 800px;
+  margin: auto;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ball {
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 100%;
+  height: 100px;
+  margin: 10px;
+}
+
+h1 , h2 , h3 {
+  margin-bottom: 40px;
+}
+
+#reset-game {
+  padding: 5px;
+  margin-bottom: 20px;
+}
