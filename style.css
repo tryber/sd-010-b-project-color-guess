@@ -1,0 +1,30 @@
+header {
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  align-self: center;
+  margin: auto;
+}
+
+#colors-guess {
+  display: block;
+  margin: auto;
+  width: 416px;
+}
+
+#output , #button , #placar {
+  display: block;
+  margin: auto;
+  width: fit-content;
+}
+
+.ball {
+  border: 3px solid black;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border-radius: 50%;
+}
