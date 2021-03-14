@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+  text-align: center;
+  font-family: ranchers, monospace;
+  background-image: linear-gradient(to bottom, crimson, blueviolet);
+}
+
+header {
+  text-align: center;
+  margin: 100px 0;
+  font-size: 40px;
+}
+
+main {
+  background-color: white;
+  padding-bottom: 25px;
+  width: 600px;
+  display: inline-block;
+  border-radius: 25px;
+
+}
+
+#rgb-color {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+#score {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+.container-balls {
+  text-align: center;
+  margin: 25px;
+}
+
+.ball {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin: 10px;
+  border: ridge black 2px;
+}
+
+#answer {
+  font-size: 30px;
+}
+
+.div-btn-reset {
+  text-align: center;
+}
+
+button {
+  font-size: 20px;
+  width: 250px;
+  height: 50px;
+}
+
+footer {
+  height: 300px;
+}
+
+footer h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 820px;
+}
