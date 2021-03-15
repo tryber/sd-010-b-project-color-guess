@@ -1,0 +1,50 @@
+#title {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.rgb-section {
+  margin: 50px 0;
+  text-align: center;
+}
+
+#rgb-color {
+  font-size: 20px;
+}
+
+.balls-section {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.ball {
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+  height: 80px;
+  width: 80px;
+}
+
+.answer-section {
+  text-align: center;
+}
+
+#answer {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.button-section {
+  margin: 25px 0;
+  text-align: center;
+}
+
+#reset-game {
+  padding: 5px;
+}
+
+.rgb-section p {
+  font-weight: 600;
+  font-size: 20px;
+}
