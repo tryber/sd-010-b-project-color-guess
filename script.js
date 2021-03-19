@@ -35,11 +35,11 @@ function guessColor() {
       initialColor.innerHTML = `rgb${initialColor.innerHTML}`;
       if (colors[i].style.backgroundColor === initialColor.innerHTML) {
         answer.innerHTML = 'Acertou!';
-        score.value = parseFloat(score.value) + 3;
+        score.innerHTML = parseFloat(score.innerHTML) + 3;
       } else {
         answer.innerHTML = 'Errou! Tente novamente!';
-        score.value = parseFloat(score.value) - 1;
-        if (score.value < 0) {
+        score.innerHTML = parseFloat(score.innerHTML) - 1;
+        if (score.innerHTML < 0) {
           alert('Atualize a página para recomeçar!');
         }
       }
