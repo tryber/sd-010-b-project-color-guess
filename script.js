@@ -28,7 +28,7 @@ function guessColor() {
 
   for (let i = 0; i < colors.length; i += 1) {
     colors[i].addEventListener('click', () => {
-      initialColor.innerHTML = initialColor.innerHTML.replace('(', 'rgb(');
+      initialColor.innerHTML = `rgb${initialColor.innerHTML}`;
       if (colors[i].style.backgroundColor === initialColor.innerHTML) {
         answer.innerHTML = 'Acertou!';
       } else {
@@ -39,3 +39,15 @@ function guessColor() {
 }
 
 guessColor();
+
+function resetGame() {
+  const resetButton = document.getElementById('reset-game');
+  const answer = document.getElementById('answer');
+
+  resetButton.addEventListener('click', () => {
+    generateColors();
+    answer.innerHTML = 'Escolha uma cor';
+  });
+}
+
+resetGame();

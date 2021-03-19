@@ -44,3 +44,20 @@ h2 {
   margin-right: 15px;
   border-radius: 50%;
 }
+
+.botao {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#reset-game {
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#reset-game:active {
+  transform: scale(0.98)
+}
