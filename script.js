@@ -27,7 +27,7 @@ let cont = 0;
 function guessColor() {
   const initialColor = document.getElementById('rgb-color');
   const answer = document.getElementById('answer');
-  let score = document.getElementById('score');
+  const score = document.getElementById('score');
 
   for (let i = 0; i < colors.length; i += 1) {
     // eslint-disable-next-line no-loop-func
@@ -39,6 +39,9 @@ function guessColor() {
       } else {
         answer.innerHTML = 'Errou! Tente novamente!';
         score.value = parseFloat(score.value) - 1;
+        if (score.value < 0) {
+          alert('Atualize a página para recomeçar!');
+        }
       }
       cont += 1;
       if (cont > 1) {
