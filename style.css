@@ -27,6 +27,16 @@ p {
   color: rgb(52, 52, 52);
 }
 
+span {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+input {
+  text-align: center;
+}
+
 h2 {
   text-align: center;
   margin-bottom: 10px;

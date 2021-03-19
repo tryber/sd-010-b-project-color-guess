@@ -22,17 +22,27 @@ function generateColors() {
 
 generateColors();
 
+let cont = 0;
+// eslint-disable-next-line max-lines-per-function
 function guessColor() {
   const initialColor = document.getElementById('rgb-color');
   const answer = document.getElementById('answer');
+  let score = document.getElementById('score');
 
   for (let i = 0; i < colors.length; i += 1) {
+    // eslint-disable-next-line no-loop-func
     colors[i].addEventListener('click', () => {
       initialColor.innerHTML = `rgb${initialColor.innerHTML}`;
       if (colors[i].style.backgroundColor === initialColor.innerHTML) {
         answer.innerHTML = 'Acertou!';
+        score.value = parseFloat(score.value) + 3;
       } else {
         answer.innerHTML = 'Errou! Tente novamente!';
+        score.value = parseFloat(score.value) - 1;
+      }
+      cont += 1;
+      if (cont > 1) {
+        alert('Resete o jogo para tentar novamente');
       }
     });
   }
@@ -47,6 +57,7 @@ function resetGame() {
   resetButton.addEventListener('click', () => {
     generateColors();
     answer.innerHTML = 'Escolha uma cor';
+    cont = 0;
   });
 }
 
