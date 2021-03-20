@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+
+}
+
+#rgb-color {
+  display: flex;
+  justify-content: center;
+  height: 85px;
+}
+
+#paleta-de-cores {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.bola-de-cor {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  list-style: none;
+  margin-right: 5px;
+}
