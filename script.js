@@ -50,7 +50,7 @@ const checkColor = () => {
     scoreSpanMsg.innerHTML = `Palacar: ${ScoreCounter}`;
   }
   if (keepColor !== colorCompare) {
-    findColorMsg.innerHTML = 'Você Errou!';
+    findColorMsg.innerHTML = 'Errou! Tente novamente!';
   }
 };
 
