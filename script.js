@@ -1,6 +1,6 @@
 const balls = document.querySelectorAll('.ball');
 const resetGameBtn = document.querySelector('#reset-game');
-const findColorMsg = document.querySelector('#answear');
+const findColorMsg = document.querySelector('#answer');
 const ballContainerClick = document.querySelector('#container-ball');
 const colorMsgSpan = document.querySelector('#rgb-color');
 const scoreSpanMsg = document.querySelector('#score');
