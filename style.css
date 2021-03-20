@@ -5,6 +5,7 @@
   border-radius: 50%;
   border: 2px solid rgb(148, 134, 134);
 }
+
 #config-1 {
   display: flex;
   flex-direction: column;
