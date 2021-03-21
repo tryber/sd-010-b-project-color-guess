@@ -58,15 +58,17 @@ for(let i = 0; i < todasAsBolas.length; i += 1) {
   todasAsBolas[i].addEventListener('click', bordaBolaSelecionada);
 }
 
-//Resatando o jogo
+//Resetando o jogo
 let botao = document.getElementById('reset-game');
 botao.addEventListener('click', gerandoRgb);
 botao.addEventListener('click', adicionandoCor);
 botao.addEventListener('click', function() {
   resultado.innerText = 'Escolha uma cor';
 });
-botao.addEventListener('click', bordaBolaSelecionada);
-
-
-
-
+botao.addEventListener('click', function() {
+  for(let i = 0; i < todasAsBolas.length; i += 1) {
+    if(todasAsBolas[i].classList.contains('selected')) {
+      todasAsBolas[i].classList.remove('selected');
+    }
+  }
+});
