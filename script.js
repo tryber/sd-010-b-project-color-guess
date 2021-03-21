@@ -21,13 +21,13 @@ function adicionandoCor() {
   } 
   escolhendoCirculoAleatorio.classList.remove('errado');
   escolhendoCirculoAleatorio.style.backgroundColor = `rgb${rgb.innerText}`;
-  escolhendoCirculoAleatorio.id = 'answer'
+  escolhendoCirculoAleatorio.id = 'certo'
 }
 adicionandoCor();
 
 //escolhendo a cor certa
-let resultado = document.getElementById('resultado');
-let corCerta = document.getElementById('answer');
+let resultado = document.getElementById('answer');
+let corCerta = document.getElementById('certo');
 let corErrada = document.getElementsByClassName('errado');
 let todasAsBolas = document.getElementsByClassName('ball');
 
