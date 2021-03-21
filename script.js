@@ -12,7 +12,7 @@ function generateColors() {
   }
 
   for (let i = 0; i < colors.length; i += 1) {
-    const randomColor = colors[i].style.backgroundColor;
+    const randomColor = colors[Math.floor(Math.random() * i)].style.backgroundColor;
 
     const replaceRGB = randomColor.replace('rgb', '');
 
