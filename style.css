@@ -40,3 +40,9 @@
 .selected {
   border: 4px solid pink;
 }
+
+#reset-game {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}

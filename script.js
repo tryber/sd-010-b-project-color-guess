@@ -1,6 +1,9 @@
 //gerando rgb
 let rgb = document.getElementById('rgb-color');
-rgb.innerText = '(' + Math.floor(Math.random() * 255) + ', ' + Math.floor(Math.random() * 255) + ', '+ Math.floor(Math.random() * 255) + ')';
+function gerandoRgb() {
+  rgb.innerText = '(' + Math.floor(Math.random() * 255) + ', ' + Math.floor(Math.random() * 255) + ', '+ Math.floor(Math.random() * 255) + ')';
+}
+gerandoRgb();
 
 //Gerando os 6 circulos
 for(let i = 0; i < 6; i += 1) {
@@ -55,8 +58,14 @@ for(let i = 0; i < todasAsBolas.length; i += 1) {
   todasAsBolas[i].addEventListener('click', bordaBolaSelecionada);
 }
 
-
-
+//Resatando o jogo
+let botao = document.getElementById('reset-game');
+botao.addEventListener('click', gerandoRgb);
+botao.addEventListener('click', adicionandoCor);
+botao.addEventListener('click', function() {
+  resultado.innerText = 'Escolha uma cor';
+});
+botao.addEventListener('click', bordaBolaSelecionada);
 
 
 
