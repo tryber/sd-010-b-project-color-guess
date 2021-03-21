@@ -30,3 +30,13 @@
   list-style: none;
   margin-right: 5px;
 }
+
+#resultado {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.selected {
+  border: 2px solid pink;
+}
