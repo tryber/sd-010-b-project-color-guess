@@ -1,4 +1,3 @@
-
 const bola = document.querySelectorAll('.ball');
 
 
