@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+
+}
+
+#rgb-color {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+}
+
+#paleta-de-cores {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.ball {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  list-style: none;
+  margin-right: 5px;
+}
+
+#answer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.selected {
+  border: 4px solid red;
+}
+
+#reset-game {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+#botao {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#cores {
+  display: flex;
+  justify-content: center;
+}
+
+#rgb {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#placar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#score {
+  margin-left: 5px;
+}
