@@ -5,14 +5,18 @@ function gerandoRgb() {
 }
 gerandoRgb();
 
+
 //Gerando os 6 circulos
-for(let i = 0; i < 6; i += 1) {
-  let bolaDeCor = document.createElement('li');
-  bolaDeCor.className = 'ball';
-  bolaDeCor.classList.add('errado');
-  let paletaDeCores = document.getElementById('paleta-de-cores');
-  paletaDeCores.appendChild(bolaDeCor);
+function gerandoCirculos() {
+  for(let i = 0; i < 6; i += 1) {
+    let bolaDeCor = document.createElement('li');
+    bolaDeCor.className = 'ball';
+    bolaDeCor.classList.add('errado');
+    let paletaDeCores = document.getElementById('paleta-de-cores');
+    paletaDeCores.appendChild(bolaDeCor);
+  }
 }
+gerandoCirculos();
 
 //Colocando cores nos circulos
 let circulos = document.getElementsByClassName('ball');
@@ -34,8 +38,12 @@ let corCerta = document.getElementById('certo');
 let corErrada = document.getElementsByClassName('errado');
 let todasAsBolas = document.getElementsByClassName('ball');
 
+let contador = 0;
+let placar = document.getElementById('score');
 corCerta.addEventListener('click', function() {
   resultado.innerText = 'Acertou!';
+  contador += 3;
+  placar.innerHTML = contador; 
 });
 
 for(let i = 0; i < corErrada.length; i += 1) {
