@@ -1,26 +1,44 @@
-const getElement = (element) => document.querySelectorAll(element);
+const querySelectorAll = (element) => document.querySelectorAll(element);
+const querySelector = (element) => document.querySelector(element);
+const getElementById = (element) => document.getElementById(element);
 
 const guessColor = () => {
-  const balls = getElement('.ball');
+  const balls = querySelectorAll('.ball');
   const randomPosition = Math.floor(Math.random() * balls.length);
-  const rgbColor = document.getElementById('rbg-color');
+  const rgbColor = getElementById('rbg-color');
   const rgb = balls[randomPosition].style.backgroundColor;
   const textRGB = rgb.replace('rgb', '');
   rgbColor.innerText = textRGB;
 };
 
+const checkBackgroundColor = () => {
+  const ball = querySelector('.border');
+  if (ball) {
+    ball.classList.remove('border');
+  }
+};
+
+const clickEvent = (event) => {
+  const click = event.target;
+  checkBackgroundColor();
+  click.classList.add('border');
+};
+
 const checkColor = (event) => {
   const color = event.target.style.backgroundColor;
-  const rgbColor = document.getElementById('rbg-color');
+  const rgbColor = getElementById('rbg-color');
   const stringRGB = `rgb${rgbColor.innerText}`;
+  const text = querySelector('#answer');
+  clickEvent(event);
   if (stringRGB === color) {
-    const text = document.querySelector('#answer');
     text.innerText = 'Acertou!';
+  } else {
+    text.innerText = 'Errou! Tente novamente!';
   }
 };
 
 const ballColor = () => {
-  const balls = getElement('.ball');
+  const balls = querySelectorAll('.ball');
   balls.forEach((ball) => {
     const ballStyle = ball;
     const r = Math.floor(Math.random() * 255);
@@ -32,7 +50,7 @@ const ballColor = () => {
   guessColor();
 };
 const start = () => {
-  const text = document.querySelector('#answer');
+  const text = querySelector('#answer');
   text.innerText = 'Escolha uma cor';
 };
 window.onload = () => {
