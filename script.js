@@ -26,14 +26,18 @@ const clickEvent = (event) => {
   click.classList.add('border');
 };
 
+let point = 3;
 const checkColor = (event) => {
   const color = event.target.style.backgroundColor;
   const rgbColor = getElementById('rgb-color');
   const stringRGB = `rgb${rgbColor.innerText}`;
   const text = querySelector('#answer');
+  const placar = getElementById('score');
   clickEvent(event);
   if (stringRGB === color) {
     text.innerText = 'Acertou!';
+    placar.innerText = `Placar: ${point}`;
+    point += 3;
   } else {
     text.innerText = 'Errou! Tente novamente!';
   }
